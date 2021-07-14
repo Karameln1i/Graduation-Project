@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bee13ff0-5505-413b-8198-dba77655b2fd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Mover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/Transitions/TargetDieTransition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/PlayButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/Transition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State/CelebrationState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/EnemyStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State/MoveState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/OpenSelectLevelButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State/AttackStte.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/unity-scene-reference-master/unity-scene-reference/Assets/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/ExitBotton.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Loader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/Transition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Mover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/Transitions/TargetDieTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State/CelebrationState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State/MoveState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/Transitions/DistanceTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/HealthBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/ExitBotton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/SelectLevelButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/Button.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/PlayButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/SelectTowerMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/OpenSelectLevelButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State/AttackStte.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/EnemyStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/SelectTowerPanel.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1urDatHIJFSot8SngmfCBoggJq2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bee13ff0-5505-413b-8198-dba77655b2fd" name="Default Changelist" comment="" />
+      <created>1625414884443</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625414884443</updated>
+      <workItem from="1625414889928" duration="1006000" />
+      <workItem from="1625502156636" duration="5955000" />
+      <workItem from="1625569463153" duration="3611000" />
+      <workItem from="1625578082965" duration="1894000" />
+      <workItem from="1625586865202" duration="2481000" />
+      <workItem from="1625594312809" duration="6000" />
+      <workItem from="1625594336505" duration="5805000" />
+      <workItem from="1625600392785" duration="51000" />
+      <workItem from="1625600951519" duration="610000" />
+      <workItem from="1625656543428" duration="2656000" />
+      <workItem from="1625667059499" duration="4554000" />
+      <workItem from="1625686821156" duration="1287000" />
+      <workItem from="1625688461643" duration="731000" />
+      <workItem from="1625747037216" duration="4225000" />
+      <workItem from="1625756539044" duration="2216000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
