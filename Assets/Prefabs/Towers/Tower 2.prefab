@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2502201983097118770}
   - component: {fileID: 755902027513031782}
   - component: {fileID: 8423163154869743964}
-  - component: {fileID: 6273799483842675016}
   - component: {fileID: 3878162885859133437}
   - component: {fileID: 46688874450506960}
+  - component: {fileID: 4056338465376322459}
+  - component: {fileID: 8195474267104580097}
   m_Layer: 0
   m_Name: Tower 2
   m_TagString: Untagged
@@ -100,21 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _price: 5
---- !u!114 &6273799483842675016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5779131358665109795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a3b112250cf21f42bfa9d5c67c2e149, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   _projectile: {fileID: 1032431193269634107, guid: bb7649461837a7845aeb4d983a2f77ef, type: 3}
   _projectileLaunchSite: {fileID: 6331104191752434388}
-  _timeBeetwenAttack: 0.75
+  _timeBeetwenAttack: 0.5
 --- !u!58 &3878162885859133437
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -150,6 +139,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4056338465376322459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5779131358665109795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7cd7e66dbe53794da47edaa0024dcab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _towerAttack: {fileID: 8195474267104580097}
+--- !u!114 &8195474267104580097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5779131358665109795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b58253f0a10f3f4eb4f5c170eb40143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6331104191752434388
 GameObject:
   m_ObjectHideFlags: 0

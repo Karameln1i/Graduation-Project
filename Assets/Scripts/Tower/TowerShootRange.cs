@@ -3,15 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-public class TowerCollisionHandler : MonoBehaviour
-{
 
-    [SerializeField] private Projectile _projectile;
-    [SerializeField] private GameObject _projectileLaunchSite;
-    [SerializeField] private float _timeBeetwenAttack;
-    
+[RequireComponent(typeof(Tower))]
+public class TowerShootRange : MonoBehaviour
+{
+    [SerializeField] private TowerAttack _towerAttack;
+
+    private float _timeBeetwenAttack;
     private float _pastTime;
     private Enemy _enemyToAttack;
+
+    private void Start()
+    {
+        _timeBeetwenAttack = GetComponent<Tower>().TimeBeetwenAttack;
+    }
+    
     
     private void Update()
     {
@@ -26,14 +32,11 @@ public class TowerCollisionHandler : MonoBehaviour
 
            if (_pastTime >= _timeBeetwenAttack)
            {
-               Shoot(_enemyToAttack);
+               _towerAttack.Shoot(_enemyToAttack);
                _pastTime = 0;
            }
        }
    }
 
-   private void Shoot(Enemy target)
-   {
-         Instantiate(_projectile,_projectileLaunchSite.transform).FlyToTarget(target);
-   }
+  
 }

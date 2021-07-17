@@ -9,12 +9,12 @@ public class MoneyBar : Bar
     
     private void OnEnable()
     {
-        _player.MoneyChangedChanged += OnValueChanged;
+        _player.MoneyChanged += OnValueChanged;
     }
 
     private void OnDisable()
     {
-        _player.MoneyChangedChanged -= OnValueChanged;
+        _player.MoneyChanged -= OnValueChanged;
     }
     
 }

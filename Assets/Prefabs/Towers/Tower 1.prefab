@@ -42,8 +42,9 @@ GameObject:
   - component: {fileID: 8063235903313647015}
   - component: {fileID: 400272226254676192}
   - component: {fileID: -5788413621785487411}
-  - component: {fileID: 7261398160916279693}
   - component: {fileID: 8167212575189831140}
+  - component: {fileID: 8144065480975317582}
+  - component: {fileID: 6477757160702648921}
   m_Layer: 0
   m_Name: Tower 1
   m_TagString: Untagged
@@ -59,8 +60,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7612136711845459235}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3563, y: 0, z: 0}
-  m_LocalScale: {x: 1.2723792, y: 1, z: 1}
+  m_LocalPosition: {x: 0.3563, y: 0.0344, z: 0}
+  m_LocalScale: {x: 1.2723792, y: 1.1845, z: 1}
   m_Children:
   - {fileID: 6197463445009095355}
   m_Father: {fileID: 0}
@@ -130,6 +131,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _price: 10
+  _projectile: {fileID: 2047815063064325407, guid: edd41a48243094e4dadf07971a59d05f, type: 3}
+  _projectileLaunchSite: {fileID: 5594377232354106386}
+  _timeBeetwenAttack: 0.5
 --- !u!58 &-5788413621785487411
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -146,21 +150,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 1}
   serializedVersion: 2
   m_Radius: 2.5328603
---- !u!114 &7261398160916279693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7612136711845459235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a3b112250cf21f42bfa9d5c67c2e149, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _projectile: {fileID: 2047815063064325407, guid: edd41a48243094e4dadf07971a59d05f, type: 3}
-  _projectileLaunchSite: {fileID: 5594377232354106386}
-  _timeBeetwenAttack: 1
 --- !u!95 &8167212575189831140
 Animator:
   serializedVersion: 3
@@ -180,3 +169,28 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8144065480975317582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7612136711845459235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7cd7e66dbe53794da47edaa0024dcab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _towerAttack: {fileID: 6477757160702648921}
+--- !u!114 &6477757160702648921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7612136711845459235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b58253f0a10f3f4eb4f5c170eb40143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

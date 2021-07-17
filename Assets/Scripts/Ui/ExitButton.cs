@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
-public class ExitBotton : MonoBehaviour
+public class ExitButton : MonoBehaviour
 {
    [SerializeField]private Button _exitButton;
    

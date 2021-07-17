@@ -8,9 +8,8 @@ using Random = UnityEngine.Random;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private Menu _menu;
-    [SerializeField] private GameObject _panel;
-    [SerializeField] private float timeBeetwenSpawn;
+    [SerializeField] private Game _game;
+    [SerializeField] private float _timeBeetwenSpawn;
     [SerializeField] private List<Enemy> _enemys=new List<Enemy>();
     [SerializeField] private int _maxCount;
     [SerializeField] private Transform _path;
@@ -25,7 +24,7 @@ public class Spawner : MonoBehaviour
     {
         _ealepseadTime += Time.deltaTime;
 
-        if (_ealepseadTime >= timeBeetwenSpawn&&_spawnedCount<_maxCount)
+        if (_ealepseadTime >= _timeBeetwenSpawn&&_spawnedCount<_maxCount)
         {
             _ealepseadTime = 0;
             _spawnedCount++;
@@ -44,7 +43,7 @@ public class Spawner : MonoBehaviour
 
         if (_numberOfDeathEnemis==_maxCount)
         {
-            _menu.OpenPanel(_panel);
+            _game.LevelPassed();
         }
     }
 }

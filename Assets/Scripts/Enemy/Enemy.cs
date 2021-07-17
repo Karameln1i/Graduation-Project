@@ -31,7 +31,6 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         _health -= damage;
-        _audioSource.pitch = Random.Range(0.8f,1f);
         _audioSource.Play();
             
         if (_health<=0)

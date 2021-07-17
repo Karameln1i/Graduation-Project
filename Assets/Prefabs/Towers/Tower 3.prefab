@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 1398789974583443341}
   - component: {fileID: 5165257243255228874}
   - component: {fileID: 5371565649990925492}
-  - component: {fileID: 7865444540705693112}
   - component: {fileID: 9092528244500076603}
   - component: {fileID: -4133429595675910928}
+  - component: {fileID: 2513008650618491377}
+  - component: {fileID: 758575908150124574}
   m_Layer: 0
   m_Name: Tower 3
   m_TagString: Untagged
@@ -100,18 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _price: 1
---- !u!114 &7865444540705693112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7140247828968896025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a3b112250cf21f42bfa9d5c67c2e149, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   _projectile: {fileID: 7989475274248080808, guid: 7080f69a2e13b8647a9c43820a916fb1, type: 3}
   _projectileLaunchSite: {fileID: 7674810958756128374}
   _timeBeetwenAttack: 0.5
@@ -150,6 +139,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2513008650618491377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7140247828968896025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7cd7e66dbe53794da47edaa0024dcab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _towerAttack: {fileID: 758575908150124574}
+--- !u!114 &758575908150124574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7140247828968896025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b58253f0a10f3f4eb4f5c170eb40143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7674810958756128374
 GameObject:
   m_ObjectHideFlags: 0

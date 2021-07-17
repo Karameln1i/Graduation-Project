@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using IJunior.TypedScenes;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -13,23 +14,19 @@ public class SelectTowerPanel : MonoBehaviour
    [SerializeField] private GameObject _container;
    [SerializeField] private Player _player;
    [SerializeField] private AudioSource _audioSource;
-   
+
    private TowerInstallationSite _installationSite;
 
    private void OnEnable()
    {
-       Rotate();
+       _animator.Play(AnimatorTowerController.States.Open);
    }
-
-  private void Rotate()
-   {
-       _animator.Play("Rotate");
-   }
-
+   
    public void Open(TowerInstallationSite installationSite)
    {
        gameObject.SetActive(true);
        _installationSite = installationSite;
+       _animator.Play(AnimatorTowerController.States.Open);
        _audioSource.Play();
    }
    
@@ -47,7 +44,9 @@ public class SelectTowerPanel : MonoBehaviour
            _installationSite.TowerInstaled();
            Debug.Log(_installationSite.IsEmpty);
            _player.TakeAwayMoney(template.Price);
+           Close();
        }
    }
+   
    
 }

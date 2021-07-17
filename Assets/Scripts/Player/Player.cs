@@ -6,9 +6,8 @@ using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private Game _game;
     [SerializeField] private int _health;
-    [SerializeField] private GameObject _panel;
-    [SerializeField] private Menu _menu;
     [SerializeField] private int _startMoney;
     
     private int _money;
@@ -16,12 +15,12 @@ public class Player : MonoBehaviour
     public int Money => _money;
     
     public event UnityAction<int> HealthChanged;
-    public event UnityAction<int> MoneyChangedChanged;
+    public event UnityAction<int> MoneyChanged;
 
     private void Start()
     {
         _money = _startMoney;
-        MoneyChangedChanged?.Invoke(_money);
+        MoneyChanged?.Invoke(_money);
         HealthChanged?.Invoke(_health);
     }
 
@@ -39,17 +38,17 @@ public class Player : MonoBehaviour
     public void AddMoney(int reward)
     {
         _money += reward;
-        MoneyChangedChanged?.Invoke(_money);
+        MoneyChanged?.Invoke(_money);
     }
 
     public void TakeAwayMoney(int money)
     {
         _money -= money;
-        MoneyChangedChanged?.Invoke(_money);
+        MoneyChanged?.Invoke(_money);
     }
 
     private void Dead()
     {
-        _menu.OpenPanel(_panel);
+        _game.LevelFailed();
     }
 }
