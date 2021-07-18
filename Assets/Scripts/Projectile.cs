@@ -9,7 +9,7 @@ using Random = UnityEngine.Random;
 public class Projectile : MonoBehaviour
 {
     [SerializeField] private int _damage;
-    [SerializeField] private float _diration;
+    [SerializeField] private float _duration;
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private float _lifeTime;
 
@@ -33,7 +33,7 @@ public class Projectile : MonoBehaviour
     
     public void FlyToTarget(Enemy target)
     {
-        transform.DOMove(target.transform.position, _diration);
+        transform.DOMove(target.transform.position, _duration);
         Vector3 direction = target.transform.position - transform.position;
         float angle = Mathf.Atan2(direction.y,direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);

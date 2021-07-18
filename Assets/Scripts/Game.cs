@@ -10,7 +10,7 @@ public class Game : MonoBehaviour
 
     public void LevelPassed()
     {
-        _menu.OpenPanel(_levelFailedPanel);
+        _menu.OpenPanel(_levelPassedPanel);
     }
 
     public void LevelFailed()

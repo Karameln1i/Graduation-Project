@@ -12,7 +12,6 @@ public class Tower : MonoBehaviour
    public Projectile Projectile => _projectile;
    public GameObject ProjectileLaunchSite => _projectileLaunchSite;
    public float TimeBeetwenAttack => _timeBeetwenAttack;
-   
-   
+
    public int Price => _price;
 }

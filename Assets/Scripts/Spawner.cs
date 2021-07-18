@@ -14,6 +14,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private int _maxCount;
     [SerializeField] private Transform _path;
     [SerializeField] private Player _target;
+    [SerializeField] private GameObject _container;
     
     private float _ealepseadTime;
     private int _spawnedCount;
@@ -28,7 +29,8 @@ public class Spawner : MonoBehaviour
         {
             _ealepseadTime = 0;
             _spawnedCount++;
-            Enemy enemy = Instantiate(_enemys[Random.Range(0, _enemys.Count)], transform.position, quaternion.identity);
+            Enemy enemy = Instantiate(_enemys[Random.Range(0, _enemys.Count)], _container.transform.position, quaternion.identity);
+            enemy.transform.position = transform.position;
            enemy.SetPath(_path);
            enemy.SetTarget(_target);
             enemy.Dying += OnEnemyDying;

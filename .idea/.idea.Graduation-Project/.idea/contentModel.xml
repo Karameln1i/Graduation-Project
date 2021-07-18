@@ -7,30 +7,6 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="NavMeshPlus-master" t="Include">
-          <e p="NavMeshComponents" t="Include">
-            <e p="Editor" t="Include">
-              <e p="NavMeshAssetManager.cs" t="Include" />
-              <e p="NavMeshAssetManager2d.cs" t="Include" />
-              <e p="NavMeshComponentsEditor.asmdef" t="Include" />
-              <e p="NavMeshComponentsGUIUtility.cs" t="Include" />
-              <e p="NavMeshLinkEditor.cs" t="Include" />
-              <e p="NavMeshModifierEditor.cs" t="Include" />
-              <e p="NavMeshModifierVolumeEditor.cs" t="Include" />
-              <e p="NavMeshSurfaceEditor.cs" t="Include" />
-              <e p="NavMeshSurfaceEditor2d.cs" t="Include" />
-            </e>
-            <e p="Scripts" t="Include">
-              <e p="NavMeshBuilder2d.cs" t="Include" />
-              <e p="NavMeshComponents.asmdef" t="Include" />
-              <e p="NavMeshLink.cs" t="Include" />
-              <e p="NavMeshModifier.cs" t="Include" />
-              <e p="NavMeshModifierVolume.cs" t="Include" />
-              <e p="NavMeshSurface.cs" t="Include" />
-              <e p="NavMeshSurface2d.cs" t="Include" />
-            </e>
-          </e>
-        </e>
         <e p="Plugins" t="Include">
           <e p="Demigiant" t="Include">
             <e p="DOTween" t="Include">
@@ -45,41 +21,6 @@
               </e>
               <e p="readme.txt" t="Include" />
             </e>
-          </e>
-          <e p="TypedScenes" t="Include">
-            <e p="Core" t="Include">
-              <e p="ISceneLoadHandler.cs" t="Include" />
-              <e p="ITypedAwakeHandler.cs" t="Include" />
-              <e p="SceneAnalyzer.cs" t="Include" />
-              <e p="ScenePostprocessor.cs" t="Include" />
-              <e p="TypedProcessor.cs" t="Include" />
-              <e p="TypedScene.cs" t="Include" />
-              <e p="TypedSceneGenerator.cs" t="Include" />
-              <e p="TypedSceneSettings.cs" t="Include" />
-              <e p="TypedSceneStorage.cs" t="Include" />
-              <e p="TypedSceneValidator.cs" t="Include" />
-            </e>
-            <e p="Samples" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="CustomClassHandler.cs" t="Include" />
-                <e p="ExampleSceneLoadModel.cs" t="Include" />
-                <e p="IntHandler.cs" t="Include" />
-                <e p="MultiHandler.cs" t="Include" />
-                <e p="StringHandler.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-        </e>
-        <e p="Scenes" t="Include">
-          <e p="Typed" t="Include">
-            <e p="Level_1.cs" t="Include" />
-            <e p="Level_2.cs" t="Include" />
-            <e p="Level_3.cs" t="Include" />
-            <e p="Level_4.cs" t="Include" />
-            <e p="MainMenu.cs" t="Include" />
-            <e p="SampleScene.cs" t="Include" />
-            <e p="Scene_To_Load.cs" t="Include" />
-            <e p="SelectLevel.cs" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">
@@ -102,6 +43,9 @@
           </e>
           <e p="Game.cs" t="Include" />
           <e p="Menu.cs" t="Include" />
+          <e p="Particle Systems" t="Include">
+            <e p="Smoke.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="Player.cs" t="Include" />
           </e>
@@ -120,7 +64,7 @@
             <e p="LoadSceneButton.cs" t="Include" />
             <e p="MoneyBar.cs" t="Include" />
             <e p="OpenSelectLevelButton.cs" t="Include" />
-            <e p="Tower" t="Include">
+            <e p="SelectTower Panel" t="Include">
               <e p="AnimatorTowerController.cs" t="Include" />
               <e p="SelectTowerPanel.cs" t="Include" />
               <e p="TowerPriceView.cs" t="Include" />
@@ -175,8 +119,6 @@
         </e>
       </e>
       <e p="Graduation-Project.sln" t="IncludeFlat" />
-      <e p="NavMeshComponents.csproj" t="IncludeRecursive" />
-      <e p="NavMeshComponentsEditor.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Temp\Bin" t="ExcludeRecursive" />

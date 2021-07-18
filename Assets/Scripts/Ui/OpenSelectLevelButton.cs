@@ -28,11 +28,9 @@ public class OpenSelectLevelButton : MonoBehaviour
         if (_panel.gameObject.activeSelf==true)
         {
             _panel.Close();
-            Debug.Log("OPEN");
         }
         
         _panel.transform.position = _installationSite.Center.transform.position;
-        Debug.Log(_installationSite.name);
         _panel.Open(_installationSite); ;
     }
 }
