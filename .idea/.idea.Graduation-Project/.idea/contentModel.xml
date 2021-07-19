@@ -24,6 +24,10 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AnimationControlers" t="Include">
+            <e p="AnimatorTowerController.cs" t="Include" />
+            <e p="EnemyAnomationController.cs" t="Include" />
+          </e>
           <e p="Enemy" t="Include">
             <e p="Enemy.cs" t="Include" />
             <e p="StateMachine" t="Include">
@@ -31,12 +35,14 @@
               <e p="State" t="Include">
                 <e p="AttackStte.cs" t="Include" />
                 <e p="CelebrationState.cs" t="Include" />
+                <e p="DieState.cs" t="Include" />
                 <e p="MoveState.cs" t="Include" />
               </e>
               <e p="State.cs" t="Include" />
               <e p="Transition.cs" t="Include" />
               <e p="Transitions" t="Include">
                 <e p="DistanceTransition.cs" t="Include" />
+                <e p="IsAliveTransition.cs" t="Include" />
                 <e p="TargetDieTransition.cs" t="Include" />
               </e>
             </e>
@@ -44,7 +50,7 @@
           <e p="Game.cs" t="Include" />
           <e p="Menu.cs" t="Include" />
           <e p="Particle Systems" t="Include">
-            <e p="Smoke.cs" t="Include" />
+            <e p="EffectCreator.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="Player.cs" t="Include" />
@@ -65,7 +71,6 @@
             <e p="MoneyBar.cs" t="Include" />
             <e p="OpenSelectLevelButton.cs" t="Include" />
             <e p="SelectTower Panel" t="Include">
-              <e p="AnimatorTowerController.cs" t="Include" />
               <e p="SelectTowerPanel.cs" t="Include" />
               <e p="TowerPriceView.cs" t="Include" />
             </e>

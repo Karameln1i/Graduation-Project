@@ -9,7 +9,7 @@ public class CelebrationState : State
 
     private void OnEnable()
     {
-        _animator.Play("Duing");
+        _animator.Play(EnemyAnomationController.States.Hurt);
     }
 
     private void OnDisable()

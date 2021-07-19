@@ -10,7 +10,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int _health;
     [SerializeField] private int _reward;
     [SerializeField] private AudioSource _audioSource;
-    
     private Player _target;
     private Transform _path;
 
@@ -19,14 +18,9 @@ public class Enemy : MonoBehaviour
    public Transform Path => _path;
    
    public Player Target => _target;
-    
+   
+    public event UnityAction Die;
     public event UnityAction<Enemy> Dying;
-
-    private void Die()
-    {
-        Dying?.Invoke(this);
-        Destroy(gameObject);
-    }
     
     public void TakeDamage(int damage)
     {
@@ -35,7 +29,8 @@ public class Enemy : MonoBehaviour
             
         if (_health<=0)
         {
-            Die();
+            Dying?.Invoke(this);
+            Die?.Invoke();
         }
     }
 

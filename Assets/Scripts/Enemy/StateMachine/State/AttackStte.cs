@@ -29,7 +29,7 @@ public class AttackStte : State
 
     private void Attack(Player target)
     {
-        _animator.Play("Attack");
+        _animator.Play(EnemyAnomationController.States.Attack);
         target.ApplyDamage(_damage);
     }
 }

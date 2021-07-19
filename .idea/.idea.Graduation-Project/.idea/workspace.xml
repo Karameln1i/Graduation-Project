@@ -11,29 +11,37 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Particle Systems/Smoke.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/Transitions/IsAliveTransition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tower/TowerAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State/DieState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimationControlers/AnimatorTowerController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/ExitButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/SelectTowerPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/Tower/AnimatorTowerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tower/TowerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tower/TowerShootRange.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Particle Systems/Smoke.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/Tower/SelectTowerPanel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/SelectTower Panel/AnimatorTowerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tower/Tower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/SelectTower Panel/SelectTowerPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/OpenSelectLevelButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EffectCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/SelectTower Panel/SelectTowerPanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimationControlers/EnemyAnomationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State/AttackStte.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State/CelebrationState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tower/Tower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tower/TowerAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/Transitions/IsAliveTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State/DieState.cs" />
       </list>
     </option>
   </component>
@@ -63,7 +71,15 @@
       <updated>1626519771159</updated>
       <workItem from="1626519775573" duration="4343000" />
       <workItem from="1626530930853" duration="3630000" />
-      <workItem from="1626601851991" duration="5653000" />
+      <workItem from="1626601851991" duration="5827000" />
+      <workItem from="1626616055035" duration="412000" />
+      <workItem from="1626692066559" duration="1780000" />
+      <workItem from="1626693882070" duration="1776000" />
+      <workItem from="1626695694502" duration="1777000" />
+      <workItem from="1626697505863" duration="1774000" />
+      <workItem from="1626699519686" duration="1372000" />
+      <workItem from="1626703520523" duration="1768000" />
+      <workItem from="1626705617922" duration="64000" />
     </task>
     <servers />
   </component>

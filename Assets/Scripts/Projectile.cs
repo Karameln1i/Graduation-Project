@@ -12,6 +12,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] private float _duration;
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private float _lifeTime;
+    [SerializeField] private EffectCreator _effectCreator;
 
     private float _ealepseadTime;
 
@@ -44,6 +45,7 @@ public class Projectile : MonoBehaviour
         if (collision.TryGetComponent<Enemy>(out Enemy enemy))
         {
             enemy.TakeDamage(_damage);
+            _effectCreator.CreateEffect(collision.transform);
             Destroy(gameObject);
         }
     }

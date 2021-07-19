@@ -13,7 +13,7 @@ public class SelectTowerPanel : MonoBehaviour
    [SerializeField] private GameObject _container;
    [SerializeField] private Player _player;
    [SerializeField] private AudioSource _audioSource;
-   [SerializeField] private Smoke _smoke;
+   [SerializeField] private EffectCreator _effectCreator;
 
    private TowerInstallationSite _installationSite;
 
@@ -41,7 +41,7 @@ public class SelectTowerPanel : MonoBehaviour
        {
            var tower=Instantiate(template,_container.transform);
            tower.transform.position = _towerLocationSpawn.transform.position;
-           _smoke.CreateSmoke(_installationSite.transform);
+           _effectCreator.CreateEffect(tower.transform);
            _installationSite.TowerInstaled();
            _player.TakeAwayMoney(template.Price);
            Close();

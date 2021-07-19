@@ -6,7 +6,6 @@ using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private Game _game;
     [SerializeField] private int _health;
     [SerializeField] private int _startMoney;
     
@@ -16,6 +15,7 @@ public class Player : MonoBehaviour
     
     public event UnityAction<int> HealthChanged;
     public event UnityAction<int> MoneyChanged;
+    public event UnityAction PlayerDied;
 
     private void Start()
     {
@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
         
         if (_health <= 0)
         {
-            Dead();
+            Die();
         }
     }
 
@@ -47,8 +47,8 @@ public class Player : MonoBehaviour
         MoneyChanged?.Invoke(_money);
     }
 
-    private void Dead()
+    private void Die()
     {
-        _game.LevelFailed();
+        PlayerDied?.Invoke();
     }
 }

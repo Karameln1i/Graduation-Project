@@ -8,7 +8,6 @@ using Random = UnityEngine.Random;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private Game _game;
     [SerializeField] private float _timeBeetwenSpawn;
     [SerializeField] private List<Enemy> _enemys=new List<Enemy>();
     [SerializeField] private int _maxCount;
@@ -19,7 +18,8 @@ public class Spawner : MonoBehaviour
     private float _ealepseadTime;
     private int _spawnedCount;
     private int _numberOfDeathEnemis;
-    
+
+    public event UnityAction AllEnemisDied;
     
     private void Update()
     {
@@ -45,7 +45,7 @@ public class Spawner : MonoBehaviour
 
         if (_numberOfDeathEnemis==_maxCount)
         {
-            _game.LevelPassed();
+            AllEnemisDied?.Invoke();
         }
     }
 }
