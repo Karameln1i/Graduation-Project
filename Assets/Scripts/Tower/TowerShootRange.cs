@@ -10,7 +10,7 @@ public class TowerShootRange : MonoBehaviour
     [SerializeField] private TowerAttack _towerAttack;
 
     private float _timeBeetwenAttack;
-    private float _pastTime;
+    private float _elapsedTime;
     private Enemy _enemyToAttack;
 
     private void Start()
@@ -18,25 +18,25 @@ public class TowerShootRange : MonoBehaviour
         _timeBeetwenAttack = GetComponent<Tower>().TimeBeetwenAttack;
     }
     
-    
     private void Update()
     {
-        _pastTime += Time.deltaTime;
+        _elapsedTime += Time.deltaTime;
     }
     
-   private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
    {
        if (collision.TryGetComponent<Enemy>(out Enemy enemy))
        {
-           _enemyToAttack = enemy;
-
-           if (_pastTime >= _timeBeetwenAttack)
+           if (enemy.IsAlive)
            {
-               _towerAttack.Shoot(_enemyToAttack);
-               _pastTime = 0;
+               _enemyToAttack = enemy;
+               
+               if (_elapsedTime >= _timeBeetwenAttack&&_enemyToAttack!=null)
+               {
+                   _towerAttack.Shoot(_enemyToAttack);
+                   _elapsedTime = 0;
+               }
            }
        }
    }
-
-  
 }

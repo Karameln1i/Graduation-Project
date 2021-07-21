@@ -19,14 +19,14 @@ public class SelectTowerPanel : MonoBehaviour
 
    private void OnEnable()
    {
-       _animator.Play(AnimatorTowerController.States.Open);
+       _animator.Play(SelectTowerPanelAnimationController.States.Open);
    }
 
    public void Open(TowerInstallationSite installationSite)
    {
        gameObject.SetActive(true);
        _installationSite = installationSite;
-       _animator.Play(AnimatorTowerController.States.Open);
+       _animator.Play(SelectTowerPanelAnimationController.States.Open);
        _audioSource.Play();
    }
    

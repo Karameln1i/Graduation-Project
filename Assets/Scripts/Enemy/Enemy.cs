@@ -12,8 +12,10 @@ public class Enemy : MonoBehaviour
     [SerializeField] private AudioSource _audioSource;
     private Player _target;
     private Transform _path;
+    private bool _isAlive = true;
 
     public int Reward => _reward;
+    public bool IsAlive => _isAlive;
     
    public Transform Path => _path;
    
@@ -31,16 +33,13 @@ public class Enemy : MonoBehaviour
         {
             Dying?.Invoke(this);
             Die?.Invoke();
+            _isAlive = false;
         }
     }
 
-    public void SetPath(Transform path)
+    public void Init(Transform path,Player target)
     {
         _path = path;
-    }
-
-    public void SetTarget(Player target)
-    {
         _target = target;
     }
 }

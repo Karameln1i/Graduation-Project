@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class AnimatorTowerController
+public static class SelectTowerPanelAnimationController
 {
    public class States
    {

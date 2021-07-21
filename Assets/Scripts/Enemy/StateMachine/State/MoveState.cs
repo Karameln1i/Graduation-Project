@@ -34,6 +34,11 @@ public class MoveState : State
 
         transform.position = Vector3.MoveTowards(transform.position, target.position, _speed * Time.deltaTime);
 
+        if (target.position.x<transform.position.x)
+        {
+            transform.rotation = new Quaternion(0,180,0,0);
+        }
+
         if (transform.position==target.position)
         {
             _currentPoint++;

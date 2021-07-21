@@ -31,8 +31,7 @@ public class Spawner : MonoBehaviour
             _spawnedCount++;
             Enemy enemy = Instantiate(_enemys[Random.Range(0, _enemys.Count)], _container.transform.position, quaternion.identity);
             enemy.transform.position = transform.position;
-           enemy.SetPath(_path);
-           enemy.SetTarget(_target);
+            enemy.Init(_path,_target);
             enemy.Dying += OnEnemyDying;
         }
     }

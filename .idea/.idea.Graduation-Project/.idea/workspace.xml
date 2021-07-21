@@ -11,11 +11,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State/DieState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimationControlers/SelectTowerPanelAnimationController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/Transitions/IsAliveTransition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tower/TowerAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State/DieState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimationControlers/AnimatorTowerController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -23,7 +23,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/ExitButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/SelectTowerPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/Tower/AnimatorTowerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tower/TowerShootRange.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Particle Systems/Smoke.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/Tower/SelectTowerPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/SelectTower Panel/AnimatorTowerController.cs" />
@@ -37,10 +36,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State/AttackStte.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State/CelebrationState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tower/Tower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tower/TowerAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/Transitions/IsAliveTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimationControlers/SelectTowerPanelAnimationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tower/TowerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State/MoveState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tower/TowerShootRange.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StateMachine/State/DieState.cs" />
       </list>
     </option>
@@ -51,6 +53,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -60,6 +63,34 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/OneDrive/Рабочий стол/Vipusknoi\Tower Defense.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\karam\OneDrive\Рабочий стол\Vipusknoi" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -80,12 +111,24 @@
       <workItem from="1626699519686" duration="1372000" />
       <workItem from="1626703520523" duration="1768000" />
       <workItem from="1626705617922" duration="64000" />
+      <workItem from="1626777623843" duration="1834000" />
+      <workItem from="1626779497988" duration="1778000" />
+      <workItem from="1626781317495" duration="1778000" />
+      <workItem from="1626783133294" duration="1854000" />
+      <workItem from="1626785103379" duration="793000" />
+      <workItem from="1626868677044" duration="39000" />
+      <workItem from="1626868741920" duration="147000" />
+      <workItem from="1626869488880" duration="15000" />
+      <workItem from="1626869765437" duration="49000" />
+      <workItem from="1626870231039" duration="300000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
